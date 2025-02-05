@@ -23,7 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px; /* Some padding to avoid hitting the edges */
+  padding: 20px;
 }
 
 /* Container for Login and Register Forms */
@@ -33,9 +33,10 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: #f4f4f4;
-  padding: 20px;
+  padding: 30px;
   width: 100%;
-  max-width: 450px; /* Set a max-width for both login and register forms */
+  max-width: 600px; /* Increased max-width for larger forms */
+  min-width: 350px; /* Set a minimum width to ensure forms don't get too small */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   margin: 0 auto; /* Center horizontally */
@@ -43,8 +44,8 @@ body {
 
 /* Heading Style */
 h2 {
-  font-size: 26px;
-  margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 25px;
   color: #333;
   font-weight: bold;
 }
@@ -52,8 +53,8 @@ h2 {
 /* Input Fields */
 input {
   width: 100%;
-  padding: 12px;
-  margin: 10px 0;
+  padding: 14px;
+  margin: 12px 0;
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 16px;
@@ -68,7 +69,7 @@ input:focus {
 /* Button */
 button {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   background-color: #61dafb;
   color: white;
   border: none;
@@ -98,12 +99,12 @@ a:hover {
 
 /* Form Container Styling */
 .form-container {
-  padding: 30px;
+  padding: 40px;
   background: white;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   width: 100%;
-  max-width: 450px; /* Fixed width for better design */
+  max-width: 600px; /* Fixed width for better design */
   text-align: center;
 }
 
@@ -125,7 +126,7 @@ p.message {
 /* Mobile-first styles */
 @media (max-width: 600px) {
   h2 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   input, button {
@@ -133,12 +134,12 @@ p.message {
   }
 
   .form-container {
-    width: 90%;
+    width: 90%; /* Take up 90% on mobile devices */
     padding: 20px;
   }
 
   .login-container, .register-container {
-    padding: 20px;
+    padding: 25px;
   }
 
   button {
@@ -149,12 +150,12 @@ p.message {
 /* Desktop Styles */
 @media (min-width: 601px) {
   .form-container {
-    width: 450px; /* Keep the width fixed for desktop */
-    padding: 30px;
+    width: 50%; /* Take up 50% of the screen width on larger screens */
+    padding: 40px;
   }
 
   .login-container, .register-container {
-    padding: 20px;
+    padding: 30px;
   }
 
   input, button {
